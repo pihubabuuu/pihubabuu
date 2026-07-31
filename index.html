@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>For Pihu Babu</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Pihu Babu ❤️</title>
 
 <style>
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     background: #ffc1d9;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px;
     font-family: "Comic Sans MS", cursive;
 }
 
 .notebook {
-    width: 80%;
-    max-width: 600px;
-    min-height: 70vh;
+    width: 100%;
+    max-width: 500px;
+    min-height: 75vh;
     background: #fffdf8;
-    padding: 40px;
-    border-radius: 15px;
+    padding: 25px;
+    border-radius: 18px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 
     background-image: repeating-linear-gradient(
         white,
-        white 35px,
-        #ffd6e5 36px
+        white 34px,
+        #ffd6e5 35px
     );
 }
 
 .text {
     color: black;
-    font-size: 22px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 34px;
     white-space: pre-line;
+}
+
+button {
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    background: #ff5c9a;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
 }
 
 </style>
 
 </head>
 
+
 <body>
 
-<audio autoplay loop>
+<audio id="music" loop>
     <source src="music.mp3" type="audio/mp3">
 </audio>
 
@@ -74,7 +95,21 @@ I hope you smiled babu
 Yoursss
 </div>
 
+
+<button onclick="playMusic()">Play 🎵</button>
+
+
 </div>
+
+
+<script>
+
+function playMusic(){
+    document.getElementById("music").play();
+}
+
+</script>
+
 
 </body>
 </html>
